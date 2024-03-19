@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Quicksand:wght@300;500;700&display=swap');
+
+:root {
+    --green: #00FA9A;
+    --white: #fff;
+    --black: #000;
+    --gray: #ccc;
+    --darkgray: #363636;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+.formulario {
+    border-collapse: collapse;
+    width: 400px;
+}
+
+.formulario tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.formulario td {
+    padding: 10px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 5px 0 10px 0;
+}
+
+.formulario input[type="submit"] {
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #32CD32;
+    transition: all 1s;
+}
+
+.titulo {
+    width: 100%;
+    font-size: 30px;
+    margin: 20px -23px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    text-align: center;
+}
+
+.custom-alert {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    color: #333;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Adicione animação se desejar */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#alert-msg {
+    animation: fadeOut 2s ease 2s forwards;
+    /* Executar a animação após 2 segundos e manter o estado final */
+}
