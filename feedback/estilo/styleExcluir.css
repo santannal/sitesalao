@@ -20,57 +20,8 @@
 body {
     color: var(--black);
     background-image: linear-gradient(var(--white), #E0FFFF);
-}
-
-.navigate {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 40px;
-    width: 94.69vw;
-    height: 5%;
-    background: white;
-    transition: all 0.3s;
-    z-index: 1000;
-    box-shadow: 2px 2px 2px var(--gray);
-}
-
-.navigate .logo {
-    color: var(--black);
-    font-size: 1.7rem;
-    font-weight: 600;
-}
-
-.navigate .logober {
-    color: var(--green);
-}
-
-.navigate ul {
-    display: flex;
-    align-items: center;
-    margin-right: -570;
-    gap: 5rem;
-}
-
-.navigate ul li a {
-    color: var(--black);
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.5s;
-}
-
-.navigate ul li a:hover {
-    color: var(--green);
-}
-
-.navigate i {
-    cursor: pointer;
-    font-size: 20px;
-
-}
-
-.backfeedback {
-    margin-top: 50px;
+    width: 98.5vw;
+    height: 100vh;
 }
 
 .feedback {
@@ -86,7 +37,6 @@ body {
 }
 
 .titulofeedback {
-    margin-top: 100px;
     width: 95%;
     margin: 28px;
     margin-left: 15px;
@@ -149,21 +99,8 @@ body {
     margin-bottom: 6px;
 }
 
-.btnfeedback {
-    border: 1px solid var(--black);
-    padding: 12px;
-    border-radius: 15px;
-    color: var(--black);
-    margin-right: 67%;
-    margin-left: -15px;
-    margin-bottom: 0;
-}
 
-.btnfeedback:hover {
-    background: var(--green);
-    transition: all 2s;
-}
-
-.perfil img {
-    border: 2 px solid black;
+.imglixo {
+    width: 50px;
+    height: 50px;
 }

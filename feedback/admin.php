@@ -1,27 +1,64 @@
 <?php
 session_start();
 
-// Verifica se a sessão 'acesso' está definida e corresponde ao valor esperado
 if (!isset ($_SESSION['acesso']) || $_SESSION['acesso'] !== 'b8d66a4634503dcf530ce1b3704ca5dfae3d34bb') {
-    // Se não estiver definida ou não corresponder ao valor esperado, redireciona para a página de login
+
     header("Location: login.php");
-    exit(); // Certifique-se de sair após redirecionar
+    exit();
+
 }
 
-// Se o usuário está logado, você pode continuar com o restante do conteúdo da página admin.php
 ?>
 <!DOCTYPE html>
+
 <html lang="pt-br">
+<link rel="stylesheet" href="estilo/styleExcluir.css">
+<div class="titulofeedback">
+    <!-- CABEÇALHO -->
+    <span>ADMIN</span>
+    <h4>dos Clientes</h4>
+</div>
+<section class="feedback">
+    <tbody>
+        <?php
+        include_once '../classe/Feedback.php';
+        $feed = new Feedback();
+        $dados = $feed->listarFirebase();
+        if (!empty ($dados)) {
+            foreach ($dados as $chave => $mostrar) {
+                ?>
+                <div class="comentarios-container">
+                    <div class="comentarios-box">
+                        <div class="box-top">
+                            <div class="perfil">
+                                <a href="excluir.php?id=<?= $chave ?>">
+                                    <img src="../imagem/trash.png" alt="" class="imglixo">
+                                </a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Admin</title>
-</head>
 
-<body>
-    <h1>Bem-vindo à página de administração!</h1>
-    <!-- Conteúdo da página admin.php -->
-</body>
+                                <div class="cargo">
+                                    <p class="nomefeedback">
+                                        <strong>
+                                            <?= $mostrar['nome'] ?>
+                                        </strong>
+                                    </p>
+                                    <P class="nomefeedback">
+                                        <?= $mostrar['cargo'] ?>
+                                </div>
+                            </div>
+
+                            <div class="coment">
+                                Feedback:
+                                <?= $mostrar['descricao'] ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+        }
+        ?>
+</section>
+</tbody>
 
 </html>

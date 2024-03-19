@@ -94,4 +94,15 @@ class Feedback
         curl_close($tabela);
         return $dados = json_decode($resposta, true);
     }
+
+    public function excluirFirebase($key)
+    {
+        $chave = 'comentarioCliente/' . $key;
+        $tabela = curl_init($this->firebaseURL . $chave . '.json');
+        curl_setopt($tabela, CURLOPT_CUSTOMREQUEST, "DELETE");
+        curl_setopt($tabela, CURLOPT_RETURNTRANSFER, true);
+        $resposta = curl_exec($tabela);
+        curl_close($tabela);
+        return $resposta;
+    }
 }

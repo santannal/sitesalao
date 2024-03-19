@@ -23,7 +23,7 @@ if (isset ($id)) {
     <table class="formulario">
         <tr>
             <td>Email:</td>
-            <td><input type="text" name="txtnome" required>
+            <td><input type="email" name="txtnome" required>
         </tr>
         <tr>
             <td>Cargo:</td>

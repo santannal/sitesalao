@@ -50,7 +50,6 @@ if (filter_input(INPUT_POST, 'btnlogar')) {
             . 'TENTATIVA INCORRETA'
             . '</div>';
 
-        sleep(2);
         header("Location: login.php");
         exit();
     }
