@@ -4,7 +4,7 @@ $id = filter_input(INPUT_GET, 'id');
 include_once '../classe/Feedback.php';
 $feed = new Feedback();
 
-if (isset($id)) {
+if (isset ($id)) {
 
     $feed->setId($id);
     foreach ($dados as $mostrar) {
@@ -23,15 +23,15 @@ if (isset($id)) {
     <table class="formulario">
         <tr>
             <td>Email:</td>
-            <td><input type="text" name="txtnome">
+            <td><input type="text" name="txtnome" required>
         </tr>
         <tr>
             <td>Cargo:</td>
-            <td><input type="text" name="txtcargo"></td>
+            <td><input type="text" name="txtcargo" required></td>
         </tr>
         <tr>
             <td>Descrição:</td>
-            <td><textarea name="txtdescricao"></textarea></td>
+            <td><textarea name="txtdescricao" required></textarea></td>
         </tr>
         <!--
         <tr>
