@@ -19,9 +19,10 @@ if (!isset ($_SESSION['acesso']) || $_SESSION['acesso'] !== 'b8d66a4634503dcf530
     <h4>dos Clientes</h4>
 </div>
 <section class="feedback">
+    <a class="btnfeedback" href="logout.php">SAIR</a>
     <tbody>
         <?php
-        include_once '../classe/Feedback.php';
+        include_once '../../classe/Feedback.php';
         $feed = new Feedback();
         $dados = $feed->listarFirebase();
         if (!empty ($dados)) {
@@ -32,7 +33,7 @@ if (!isset ($_SESSION['acesso']) || $_SESSION['acesso'] !== 'b8d66a4634503dcf530
                         <div class="box-top">
                             <div class="perfil">
                                 <a href="excluir.php?id=<?= $chave ?>">
-                                    <img src="../imagem/trash.png" alt="" class="imglixo">
+                                    <img src="../../imagem/trash.png" alt="" class="imglixo">
                                 </a>
 
 

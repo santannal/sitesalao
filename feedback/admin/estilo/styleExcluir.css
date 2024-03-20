@@ -24,6 +24,22 @@ body {
     height: 100vh;
 }
 
+.btnfeedback {
+    border: 1px solid var(--black);
+    padding: 12px;
+    border-radius: 15px;
+    color: var(--black);
+    margin-right: 67%;
+    margin-left: -15px;
+    margin-bottom: 0;
+}
+
+.btnfeedback:hover {
+    background: var(--green);
+    transition: all 2s;
+    cursor: pointer;
+}
+
 .feedback {
     display: flex;
     flex-wrap: wrap;

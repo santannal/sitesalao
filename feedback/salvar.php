@@ -54,30 +54,35 @@ if (isset ($id)) {
 <?php
 
 if (filter_input(INPUT_POST, 'btnsalvar')) {
-    //capturei dados do form HTML para variáveis
     $nome = filter_input(INPUT_POST, 'txtnome');
     $cargo = filter_input(INPUT_POST, 'txtcargo');
     $descricao = filter_input(INPUT_POST, 'txtdescricao');
 
-    //inicio salvar com firebase 
-    $dados = array(
-        'nome' => $nome,
-        'cargo' => $cargo,
-        'descricao' => $descricao,
-    );
+    $email_existente = $feed->emailExistente($nome);
 
-    $feed->setDadosJson(json_encode($dados));
+    if ($email_existente) {
+        echo 'Erro: Email já registrado.';
+    } else {
+        $dados = array(
+            'nome' => $nome,
+            'cargo' => $cargo,
+            'descricao' => $descricao,
+        );
 
-    $msg = $feed->salvarFirebase() === true ? 'Erro' : 'Salvo com sucesso';
+        $feed->setDadosJson(json_encode($dados));
+        $salvarFirebase = $feed->salvarFirebase();
 
+        if ($email_existente == false) {
+            echo 'SALVO COM SUCESSO';
 
-    echo '<div id="alert-msg" class="custom-alert mt-3">'
-        . 'SALVO COM SUCESSO'
-        . '</div>';
-
-
-    // Aguarda 2 segundos antes de redirecionar
-    sleep(2);
-    header("Location: listar.php");
-    exit();
+            sleep(2);
+            header("Location: listar.php");
+            exit();
+        } else {
+            echo $email_existente;
+            return 0;
+        }
+    }
 }
+
+

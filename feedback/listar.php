@@ -4,7 +4,7 @@
     <nav class="navigate">
         <a href="#" class="logo">ROGÉRIO <span class="logober">BARBEIRO</span></a>
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#">Página inicial</a></li>
+            <li class="nav-item"><a href="../index.html">Página inicial</a></li>
             <li class="nav-item"><a href="#">Produtos</a></li>
             <li class="nav-item"><a href="#">Feedbacks</a></li>
             <li class="nav-item"><a href="#">Contato</a></li>

@@ -6,7 +6,7 @@ if (!isset ($_SESSION['acesso']) || $_SESSION['acesso'] !== 'b8d66a4634503dcf530
     exit();
 }
 
-include_once '../classe/Feedback.php';
+include_once '../../classe/Feedback.php';
 
 $chave = filter_input(INPUT_GET, 'id');
 if ($chave !== null) {

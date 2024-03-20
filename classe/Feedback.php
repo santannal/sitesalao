@@ -105,4 +105,27 @@ class Feedback
         curl_close($tabela);
         return $resposta;
     }
+
+    public function emailExistente($nome)
+    {
+        $url = $this->firebaseURL . 'comentarioCliente.json';
+        $email_existente = curl_init($url);
+        curl_setopt($email_existente, CURLOPT_CUSTOMREQUEST, "GET");
+        curl_setopt($email_existente, CURLOPT_RETURNTRANSFER, true);
+        $resposta = curl_exec($email_existente);
+        curl_close($email_existente);
+        $dados = json_decode($resposta, true);
+
+        foreach ($dados as $item) {
+            if ($item['nome'] === $nome) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function enviarEmail($destino, $assunto, $arquivo, $headers)
+    {
+        return 0;
+    }
 }

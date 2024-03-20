@@ -14,7 +14,7 @@
 
     <div class="container">
         <div class="imagemlogin">
-            <img src="../imagem/usuario.png" alt="imagem do usuario" class="imglog">
+            <img src="../../imagem/usuario.png" alt="imagem do usuario" class="imglog">
         </div>
         <form id="loginForm" method="post" class="formulariologin">
             <div class="form-group">
