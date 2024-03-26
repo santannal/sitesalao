@@ -39,7 +39,7 @@ main {
     transition: all 0.3s;
     position: fixed;
     z-index: 1000;
-    box-shadow: 2px 2px 2px var(--gray);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .navigate .logo {
@@ -104,7 +104,7 @@ main {
     width: 98.9vw;
     height: 95vh;
     overflow: hidden;
-    box-shadow: 0px 3px 0px 0px var(--gray);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .slides {
@@ -121,7 +121,7 @@ main {
 .slide {
     width: 33%;
     position: relative;
-    box-shadow: 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -143,7 +143,7 @@ main {
     border-radius: 100%;
     width: 40px;
     height: 40px;
-    box-shadow: 3px 3px 3px var(--darkgray);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     padding: 15px;
 }
 
@@ -264,11 +264,12 @@ main {
 
 .card {
     width: 400px;
+    height: 340px;
     background-color: #ffffff;
     border: 1px solid var(--blacks);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     margin: 30px;
     /* Margem interna e externa atual */
     padding: 8px;
@@ -279,8 +280,9 @@ main {
 
 .card:hover {
     transition: all 1s;
-    width: 410px;
-    box-shadow: 0 4px 8px var(--green);
+    width: 405px;
+    height: 345px;
+    box-shadow: 1px 3px 2px 1px rgba(0, 250, 154, 0.5);
 }
 
 .card+.card {
@@ -353,7 +355,7 @@ main {
     width: 500px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px var(--green);
+    box-shadow: 1px 3px 2px 1px rgba(0, 250, 154, 0.5);
     margin-bottom: 22px;
 }
 
@@ -420,7 +422,7 @@ main {
     margin-top: 0px;
     padding: 0px 10%;
     background-color: var(--green);
-    box-shadow: 10px 10px 10px 12px var(--gray);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     border: 0px;
 }
 
@@ -435,7 +437,7 @@ main {
     padding: 0px 10%;
     padding-bottom: 10px;
     background-color: var(--green);
-    box-shadow: 10px 10px 10px 0px var(--gray);
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .servicotext {
@@ -465,7 +467,7 @@ main {
     height: 400px;
     margin-right: 0%;
     margin-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--black);
 }
 
@@ -490,7 +492,7 @@ main {
     border: 1px solid var(--gray);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px var(--gray);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     margin-left: 37px;
 }
 
@@ -556,7 +558,7 @@ main {
 .divsocialmedia {
     background-color: var(--green);
     display: flex;
-    width: 99vw;
+    width: 98.91vw;
     position: relative;
     align-items: center;
     box-shadow: 0 -30px 30px -30px var(--gray);
@@ -569,9 +571,11 @@ main {
 }
 
 .imgsocialmedia {
+    justify-content: space-around;
     height: 70px;
     width: 70px;
     margin: 10px;
+    margin-left: 105px;
     text-align: center;
     padding: 3px;
     margin-top: 20px;

@@ -4,20 +4,9 @@ $id = filter_input(INPUT_GET, 'id');
 include_once '../classe/Feedback.php';
 $feed = new Feedback();
 
-if (isset ($id)) {
-
-    $feed->setId($id);
-    foreach ($dados as $mostrar) {
-        $id = $mostrar['id'];
-        $nome = $mostrar['nome'];
-        $cargo = $mostrar['cargo'];
-        $descricao = $mostrar['descricao'];
-    }
-}
-
 ?>
 <link rel="stylesheet" href="estilo/styleSalvar.css">
-
+<div class="display-form">
 <form method="post" enctype="multipart/form-data" name="frmCadastro" id="frmCadastro">
     <h3 class="titulo">ADICIONAR FEEDBACK</h3>
     <table class="formulario">
@@ -50,7 +39,7 @@ if (isset ($id)) {
         </tr>
     </table>
 </form>
-
+</div>
 <?php
 
 if (filter_input(INPUT_POST, 'btnsalvar')) {
@@ -61,7 +50,16 @@ if (filter_input(INPUT_POST, 'btnsalvar')) {
     $email_existente = $feed->emailExistente($nome);
 
     if ($email_existente) {
-        echo 'Erro: Email já registrado.';
+        ?>
+        <section>
+            <div class="alert alert-2-success">
+                <h3 class="alert-title">ERRO AO ENVIAR FEEDBACK</h3>
+                <p class="alert-content">O E-mail inserido já corresponde a um já utilizado,
+                    <br> tente um outro.
+                </p>
+            </div>
+        </section>
+        <?php
     } else {
         $dados = array(
             'nome' => $nome,
@@ -73,9 +71,16 @@ if (filter_input(INPUT_POST, 'btnsalvar')) {
         $salvarFirebase = $feed->salvarFirebase();
 
         if ($email_existente == false) {
-            echo 'SALVO COM SUCESSO';
+            ?>
+            <section>
+                <div class="alert alert-2-success">
+                    <h3 class="alert-title">Feedback enviado!</h3>
+                    <p class="alert-content">Obrigado pela participação.</p>
+                </div>
+            </section>
+            <?php
 
-            sleep(2);
+            sleep(5);
             header("Location: listar.php");
             exit();
         } else {

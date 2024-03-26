@@ -15,8 +15,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    display: flex;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-form {
+    margin: 0;
+    display: flex;
 }
 
 .formulario {
@@ -66,27 +72,30 @@ body {
     text-align: center;
 }
 
-.custom-alert {
-    padding: 15px;
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
-    color: #333;
-    border-radius: 4px;
-    margin-top: 10px;
+/* alerta */
+.alert {
+    /* margin-top: 800%;
+    margin-left: -450px; */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-/* Adicione animação se desejar */
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
+.alert.alert-2-success {
+    background-color: rgb(252, 154, 154);
+    border-color: black;
+    color: black;
 
-    100% {
-        opacity: 0;
-    }
 }
 
-#alert-msg {
-    animation: fadeOut 2s ease 2s forwards;
-    /* Executar a animação após 2 segundos e manter o estado final */
+
+.alert-title {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+
+.alert-content {
+    font-size: 16px;
+    margin-bottom: 0;
 }

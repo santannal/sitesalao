@@ -8,13 +8,13 @@
             <li class="nav-item"><a href="#">Produtos</a></li>
             <li class="nav-item"><a href="#">Feedbacks</a></li>
             <li class="nav-item"><a href="#">Contato</a></li>
-            <span></span>
         </ul>
+        <!--
         <div class="menu">
             <span class="pos"></span>
             <span class="pos"></span>
             <span class="pos"></span>
-        </div>
+        </div> -->
     </nav>
 
 </header>
