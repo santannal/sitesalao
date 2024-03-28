@@ -201,6 +201,7 @@ main {
 
 .homelink:hover {
     background: darkgreen;
+    cursor: pointer;
 }
 
 .cont-img {
@@ -250,6 +251,11 @@ main {
     align-items: center;
     padding-top: 1px;
     padding-left: 11%;
+}
+
+.imagemproduto {
+    height: 800px;
+    width: 400px;
 }
 
 .produtos.sessaodois {
@@ -423,7 +429,7 @@ main {
     margin-top: 0px;
     padding: 0px 10%;
     background-color: var(--green);
-    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 0px 8px 1px rgba(0, 0, 0, 0.2);
     border: 0px;
 }
 
@@ -438,7 +444,7 @@ main {
     padding: 0px 10%;
     padding-bottom: 10px;
     background-color: var(--green);
-    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .servicotext {
@@ -547,7 +553,7 @@ main {
 }
 
 .imgunidade {
-    width: 470px;
+    width: 490px;
     height: 432px;
     margin-left: 115px;
     border: 1px solid black;
