@@ -16,10 +16,10 @@
         <nav class="navigate">
             <a href="#" class="logo">ROGÉRIO <span class="logober">BARBEIRO</span></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="feedback/listar.php">Página inicial</a></li>
-                <li class="nav-item"><a href="#">Produtos</a></li>
-                <li class="nav-item"><a href="#">Feedbacks</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
+                <li class="nav-item"><a href="#home">Página inicial</a></li>
+                <li class="nav-item"><a href="#ptproduto">Produtos</a></li>
+                <li class="nav-item"><a href="#feedback">Feedbacks</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
                 <span></span>
             </ul>
             <div class="menu">
@@ -55,15 +55,14 @@
         </div>
         <section class="home">
 
-            <div class="home-text">
+            <div class="home-text" id="home">
                 <h4 class="homeh4">SEJA BEM-VINDO!</h4>
                 <H1 class="homeh1">ROGÉRIO BARBEARIA</H1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quo doloremque voluptate sequi? Natus
-                    non vero
-                    id ipsa quaerat dolorem quia suscipit ad. Magni voluptate cum aut adipisci eveniet repellat!
+                <p class="sinopse-home">
+                    Descubra o segredo por trás dos cabelos deslumbrantes de Itu, SP! Nosso salão é o destino definitivo
+                    para uma transformação capilar extraordinária.
                 </p>
-                <a href="#" class="homelink">Marque um horário!</a>
+                <a href="#" class="homelink">Agende um horário!</a>
             </div>
             <div class="cont-img">
                 <img class="imagemhome" src="imagem/imagemInicio.jpeg" alt="Imagem de uma tesoura">
@@ -71,44 +70,41 @@
         </section>
 
 
-        <br>
+        <br> <br>
         <section class="parteproduto">
 
             <div class="produtointro">
                 <h4 class="prodh4">PRODUTOS</h4>
-                <p class="produtotxt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, in recusandae
-                    totam soluta quaerat
-                    ea dignissimos minima accusantium cum. Odio, nemo facere? Sequi quis iste animi sunt quidem
-                    consequuntur alias.</p>
+                <p class="produtotxt" id="ptproduto">Estamos orgulhosos de dizer que mantemos uma parceria sólida com
+                    nosso fornecedor de produtos por <b>mais de uma década.</b> Essa longa colaboração não é apenas um
+                    testemunho da confiança mútua, mas também garante que nossos clientes recebam sempre os <b>melhores
+                        produtos</b> para estética masculina disponíveis no mercado. </p>
             </div>
             <div class="produtos">
                 <div class="card primeiro">
                     <img src="https://picsum.photos/800/400?random=1" alt="Imagem do Cartão 1">
                     <div class="card-content">
-                        <h2 class="card-title">Cartão 1</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 class="card-title">Gel capilar</h2>
+                        <p class="card-description">Nossa linha de géis capilares oferece fixação duradoura e flexível
+                            para estilos que se destacam, mantendo seus cabelos no lugar o dia todo.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="https://picsum.photos/800/400?random=1" alt="Imagem do Cartão 2">
                     <div class="card-content">
-                        <h2 class="card-title">Cartão 2</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 class="card-title">Pomadas</h2>
+                        <p class="card-description">Com textura suave e maleável, nossas pomadas proporcionam controle e
+                            definição excepcionais, permitindo que você crie looks versáteis e impecáveis.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="https://picsum.photos/800/400?random=1" alt="Imagem do Cartão 3">
                     <div class="card-content">
-                        <h2 class="card-title">Cartão 3</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 class="card-title">Cremes</h2>
+                        <p class="card-description">Enriquecidos com ingredientes nutritivos, nossos cremes hidratantes
+                            nutrem profundamente os cabelos, deixando-os macios, sedosos e saudáveis.</p>
                     </div>
                 </div>
 
@@ -118,30 +114,27 @@
                 <div class="card primeiro">
                     <img src="https://picsum.photos/800/400?random=1" alt="Imagem do Cartão 1">
                     <div class="card-content">
-                        <h2 class="card-title">Cartão 1</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 class="card-title">Aparelhos</h2>
+                        <p class="card-description">Adquira seus aparelhos de corte para uso doméstico com garantia de
+                            qualidade.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="https://picsum.photos/800/400?random=1" alt="Imagem do Cartão 2">
                     <div class="card-content">
-                        <h2 class="card-title">Cartão 2</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 class="card-title">Camisetas</h2>
+                        <p class="card-description">Feitas com tecidos de alta qualidade e designs exclusivos, nossas
+                            camisetas complementam seu estilo pessoal enquanto oferecem conforto e estilo.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="https://picsum.photos/800/400?random=1" alt="Imagem do Cartão 3">
                     <div class="card-content">
-                        <h2 class="card-title">Cartão 3</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 class="card-title">Tônicos</h2>
+                        <p class="card-description">Revitalize seus cabelos e couro cabeludo com nossos tônicos
+                            especiais, formulados para proporcionar uma sensação refrescante e estimulante.</p>
                     </div>
                 </div>
 
@@ -149,7 +142,7 @@
         </section>
 
         <!-- COMENTÁRIOS DOS CLIENTES -->
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="titulofeedback">
                 <!-- CABEÇALHO -->
                 <span>Comentários</span>
@@ -166,17 +159,14 @@
                         <div class="perfil">
                             <img src="imagem/iconecomentario.png" alt="imagemComentario">
                             <div class="cargo">
-                                <p class="nomefeedback"><strong>Leonardo</strong></p>
-                                <P class="nomefeedback">Profissão</P>
+                                <p class="nomefeedback"><strong>fabianafloariano@hotmail.com</strong></p>
+                                <P class="nomefeedback">Professora</P>
                             </div>
                         </div>
-
-                        <div class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odio
-                            quibusdam dolor ipsa fugiat, iusto tenetur eos aspernatur reprehenderit quasi mollitia
-                            soluta reiciendis omnis, sed magnam quas voluptates maiores Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Id eos, quas sint, ducimus eum nihil
-                            praesentium veritatis laboriosam voluptatibus, facere vel earum accusamus adipisci. Ex
-                            impedit asperiores dolorem dicta quam!</excepturi>
+                        <br>
+                        <div class="coment">Feedback: Entrar neste barbearia é como entrar em um refúgio de estilo e
+                            cuidado pessoal. Meu filho adora. Ótimo atendimento, como sempre!
+                            </excepturi>
                         </div>
                     </div>
                 </div>
@@ -185,17 +175,14 @@
                         <div class="perfil">
                             <img src="imagem/iconecomentario.png" alt="imagemComentario">
                             <div class="cargo">
-                                <p class="nomefeedback"><strong>Leonardo</strong></p>
-                                <P class="nomefeedback">Profissão</P>
+                                <p class="nomefeedback"><strong>leonardosantanna@outlook.com.br</strong></p>
+                                <P class="nomefeedback">Estudante</P>
                             </div>
                         </div>
-
-                        <div class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odio
-                            quibusdam dolor ipsa fugiat, iusto tenetur eos aspernatur reprehenderit quasi mollitia
-                            soluta reiciendis omnis, sed magnam quas voluptates maiores Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Id eos, quas sint, ducimus eum nihil
-                            praesentium veritatis laboriosam voluptatibus, facere vel earum accusamus adipisci. Ex
-                            impedit asperiores dolorem dicta quam!</excepturi>
+                        <br>
+                        <div class="coment">Feedback: Esta barbearia é simplesmente fenomenal! Desde o ambiente
+                            acolhedor até o atendimento excepcional, cada visita é uma experiência de luxo. Obrigado
+                            pelo atendimento!</excepturi>
                         </div>
                     </div>
                 </div>
@@ -208,19 +195,17 @@
                 </div>
                 <div class="servicotext">
                     <h4 class="servicoh4">SERVIÇOS</h4>
-                    <p class="txtservico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis
-                        laboriosam odio
-                        ipsum nostrum ab obcaecati dolor, rerum eum tempore debitis cupiditate. Omnis accusamus ducimus,
-                        veniam repellat ullam quam sit?</p>
+                    <p class="txtservico">Na nossa barbearia, não se trata apenas de cortes de cabelo - é uma
+                        experiência completa de cuidado pessoal. Somos especializados em cortes de
+                        precisão, barbas impecáveis e produtos de qualidade.</p>
                 </div>
             </div>
             <div class="n2">
                 <div class="servicotext">
                     <h4 class="servicoh4">SERVIÇOS</h4>
-                    <p class="txtservico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis
-                        laboriosam odio
-                        ipsum nostrum ab obcaecati dolor, rerum eum tempore debitis cupiditate. Omnis accusamus ducimus,
-                        veniam repellat ullam quam sit?</p>
+                    <p class="txtservico">Entre em nossa barbearia e experimente o luxo de serviços de qualidade,
+                        combinado com um ambiente acolhedor e atendimento personalizado. Estamos aqui para garantir que
+                        você saia com confiança renovada e uma aparência impecável!</p>
                 </div>
                 <div class="imgservico">
                     <img class="imagemservico" src="imagem/imagemInicio.jpg" alt="Imagem de uma tesoura">
@@ -232,15 +217,20 @@
 
         <!--unidade-->
 
-        <section class="sessaounidade">
+        <section class="sessaounidade" id="contato">
             <div class="divunidade">
                 <div class="localizacao">
                     <h5 class="unidadeh5">NOSSA UNIDADE!</h5>
-                    <p class="unidadep">Localização:
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, sint. Ea nobis facere
-                        voluptatibus mollitia voluptates eum molestiae blanditiis quaerat voluptatum. Ab quisquam quam
-                        blanditiis aliquid dicta facilis voluptas delectus?
-                        <br>Info:
+                    <p class="unidadep">Cidade: Itu/SP <br>
+                        Bairro: Jardim Aeroporto <br>
+                        Rua: Adélio Pazinatto <br>
+                        Número: 420 <br>
+                        <br>
+
+                        Situado em uma área de
+                        fácil acesso, estamos convenientemente posicionados para atender nossos clientes com
+                        <b>praticidade</b>
+                        e <b>conforto.</b>
                     </p>
                     <div class="localsalao">
                         <img src="imagem/local.png" class="imglocal" alt="iconelocalizacao">

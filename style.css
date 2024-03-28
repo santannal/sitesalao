@@ -187,6 +187,7 @@ main {
 .home-text p {
     margin-bottom: 4rem;
     font-size: 1.2rem;
+    max-width: 550px;
 }
 
 .homelink {
