@@ -1,38 +1,41 @@
-<link rel="stylesheet" href="estilo/styleListar.css">
-<header>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <nav class="navigate">
-        <a href="#" class="logo">ROGÉRIO <span class="logober">BARBEIRO</span></a>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="../index.html">Página inicial</a></li>
-            <li class="nav-item"><a href="#">Produtos</a></li>
-            <li class="nav-item"><a href="#">Feedbacks</a></li>
-            <li class="nav-item"><a href="#">Contato</a></li>
-        </ul>
-        <!--
-        <div class="menu">
-            <span class="pos"></span>
-            <span class="pos"></span>
-            <span class="pos"></span>
-        </div> -->
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAR PHP</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="estilo/styleListar.css">
+</head>
 
-</header>
+<body>
 
-<div class="backfeedback">
-    <div class="titulofeedback">
-        <!-- CABEÇALHO -->
-        <span>Comentários</span>
-        <h4>dos Clientes</h4>
-    </div>
-    <section class="feedback">
-        <a class="btnfeedback" href="salvar.php">COMENTAR</a>
-        <tbody>
+    <header>
+        <nav class="navigate">
+            <a href="#" class="logo">ROGÉRIO <span class="logober">BARBEIRO</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="..">Página inicial</a></li>
+                <li class="nav-item"><a href="#">Produtos</a></li>
+                <li class="nav-item"><a href="#">Feedbacks</a></li>
+                <li class="nav-item"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="backfeedback">
+        <div class="titulofeedback">
+            <span>Comentários</span>
+            <h4>dos Clientes</h4>
+        </div>
+        <section class="feedback">
+            <a class="btnfeedback" href="salvar.php">COMENTAR</a>
+            <!-- Conteúdo PHP que gera os elementos com a classe .comentarios-container -->
             <?php
             include_once '../classe/Feedback.php';
             $feed = new Feedback();
             $dados = $feed->listarFirebase();
-            if (!empty ($dados)) {
+            if (!empty($dados)) {
                 foreach ($dados as $chave => $mostrar) {
                     ?>
                     <div class="comentarios-container">
@@ -46,11 +49,11 @@
                                                 <?= $mostrar['nome'] ?>
                                             </strong>
                                         </p>
-                                        <P class="nomefeedback">
+                                        <p class="nomefeedback">
                                             <?= $mostrar['cargo'] ?>
+                                        </p>
                                     </div>
                                 </div>
-
                                 <div class="coment">
                                     Feedback:
                                     <?= $mostrar['descricao'] ?>
@@ -62,6 +65,34 @@
                 }
             }
             ?>
-</div>
-</section>
-</tbody>
+        </section>
+    </div>
+
+    <script>
+
+        window.animacao = ScrollReveal({ reset: true });
+        animacao.reveal('.comentarios-container', {
+            duration: 2600
+        });
+
+        animacao.reveal('.titulofeedback', {
+            duration: 2600
+        });
+
+        animacao.reveal('.btnfeedback', {
+            duration: 2600
+        });
+
+        animacao.reveal('.nav-menu', {
+            duration: 1500
+        });
+
+        animacao.reveal('.logo', {
+            duration: 1500
+        });
+
+    </script>
+
+</body>
+
+</html>

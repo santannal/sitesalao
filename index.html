@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,51 +7,54 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="short cut icon" href="images/fav-icon.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Barbearia</title>
 </head>
 
 <body>
     <header>
 
-        <nav class="navigate">
-            <a href="#" class="logo">ROGÉRIO <span class="logober">BARBEIRO</span></a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home">Página inicial</a></li>
-                <li class="nav-item"><a href="#ptproduto">Produtos</a></li>
-                <li class="nav-item"><a href="#feedback">Feedbacks</a></li>
-                <li class="nav-item"><a href="#contato">Contato</a></li>
-                <span></span>
-            </ul>
-            <div class="menu">
-                <span class="pos"></span>
-                <span class="pos"></span>
-                <span class="pos"></span>
-            </div>
-        </nav>
-
+        <section class="navbare">
+            <nav class="navigate">
+                <a href="#" class="logo">ROGÉRIO <span class="logober">BARBEIRO</span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home">Página inicial</a></li>
+                    <li class="nav-item"><a href="#ptproduto">Produtos</a></li>
+                    <li class="nav-item"><a href="#feedback">Feedbacks</a></li>
+                    <li class="nav-item"><a href="#contato">Contato</a></li>
+                    <span></span>
+                </ul>
+                <div class="menu">
+                    <span class="pos"></span>
+                    <span class="pos"></span>
+                    <span class="pos"></span>
+                </div>
+            </nav>
+        </section>
     </header>
 
     <main>
+        <section class="carousel-animation">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="imagem/imagemSl1.jpeg" alt="Imagem barbearia 1">
+                    </div>
+                    <div class="slide">
+                        <img src="imagem/imagemSl6.jpeg" alt="Imagem barbearia 2">
+                    </div>
+                    <div class="slide">
+                        <img src="imagem/imagemSl3.jpeg" alt="Imagem barbearia 3">
+                    </div>
+                </div>
 
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="imagem/imagemSl1.jpeg" alt="Imagem barbearia 1">
+                <div class="leftarrow">
+                    <a class="arrow prev"><i class='bx bxs-right-arrow-circle bx-flip-horizontal'
+                            style='color:#f5f2f2'></i></a>
                 </div>
-                <div class="slide">
-                    <img src="imagem/imagemSl6.jpeg" alt="Imagem barbearia 2">
-                </div>
-                <div class="slide">
-                    <img src="imagem/imagemSl3.jpeg" alt="Imagem barbearia 3">
-                </div>
-            </div>
-
-            <div class="leftarrow">
-                <a class="arrow prev"><i class='bx bxs-right-arrow-circle bx-flip-horizontal'
+                <a class="arrow next"><i class='bx bxs-right-arrow-circle bx-flip-vertical'
                         style='color:#f5f2f2'></i></a>
-            </div>
-            <a class="arrow next"><i class='bx bxs-right-arrow-circle bx-flip-vertical' style='color:#f5f2f2'></i></a>
-
+        </section>
         </div>
         <section class="home">
 
@@ -68,7 +71,6 @@
                 <img class="imagemhome" src="imagem/imagemBancada.jpeg" alt="Imagem de uma tesoura">
             </div>
         </section>
-
 
         <br> <br>
         <section class="parteproduto">
@@ -219,24 +221,26 @@
 
         <section class="sessaounidade" id="contato">
             <div class="divunidade">
-                <div class="localizacao">
-                    <h5 class="unidadeh5">NOSSA UNIDADE!</h5>
-                    <p class="unidadep">Cidade: Itu/SP <br>
-                        Bairro: Jardim Aeroporto <br>
-                        Rua: Adélio Pazinatto <br>
-                        Número: 420 <br>
-                        <br>
+                <div class="unidade-animation">
+                    <div class="localizacao">
+                        <h5 class="unidadeh5">NOSSA UNIDADE!</h5>
+                        <p class="unidadep">Cidade: Itu/SP <br>
+                            Bairro: Jardim Aeroporto <br>
+                            Rua: Adélio Pazinatto <br>
+                            Número: 420 <br>
+                            <br>
 
-                        Situado em uma área de
-                        fácil acesso, estamos convenientemente posicionados para atender nossos clientes com
-                        <b>praticidade</b>
-                        e <b>conforto.</b>
-                    </p>
-                    <div class="localsalao">
-                        <img src="imagem/local.png" class="imglocal" alt="iconelocalizacao">
-                        <button class="btnvermapa" id="btnmapa">
-                            CONFERIR NO MAPA
-                        </button>
+                            Situado em uma área de
+                            fácil acesso, estamos convenientemente posicionados para atender nossos clientes com
+                            <b>praticidade</b>
+                            e <b>conforto.</b>
+                        </p>
+                        <div class="localsalao">
+                            <img src="imagem/local.png" class="imglocal" alt="iconelocalizacao">
+                            <button class="btnvermapa" id="btnmapa">
+                                CONFERIR NO MAPA
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="imgunidadediv">

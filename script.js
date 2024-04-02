@@ -46,3 +46,66 @@ document.getElementById("btnfacebook").addEventListener("click", function () {
     var urlFacebook = "https://www.facebook.com/share/B6AwnCXZE4U4b3ho/?mibextid=qi2Omg"
     window.open(urlFacebook, "_blank");
 });
+
+//ANIMAÇÃO
+
+window.animacao = ScrollReveal({ reset: true });
+
+animacao.reveal('.carousel-animation', {
+    duration: 2000,
+})
+
+animacao.reveal('.home', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.parteproduto', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.produtos', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.produtos .sessaodois', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.feedback', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.sessaoservico', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.imgservico', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.unidade-animation', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.imgunidadediv', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.divsocialmedia'), {
+    duration: 2000,
+    distance: '90px',
+}
+
+animacao.reveal('.col'), {
+    duration: 2000,
+    distance: '90px',
+}

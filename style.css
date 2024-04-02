@@ -594,3 +594,20 @@ main {
     transition: all 0.8s ease;
     overflow: hidden;
 }
+
+/*ANIMAÇÃO*/
+
+.carousel-animation,
+.home,
+.parteproduto,
+.feedback,
+.sessaoservico,
+.imgservico,
+.produtos,
+.produtos.sessaodois,
+.unidade-animation,
+.imgunidadediv,
+.divsocialmedia,
+.col {
+    visibility: hidden;
+}

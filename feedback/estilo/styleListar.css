@@ -20,6 +20,9 @@
 body {
     color: var(--black);
     background-image: linear-gradient(var(--white), #E0FFFF);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .navigate {
@@ -32,7 +35,7 @@ body {
     background: white;
     transition: all 0.3s;
     z-index: 1000;
-    box-shadow: 2px 2px 2px var(--gray);
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .navigate .logo {
