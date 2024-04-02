@@ -20,9 +20,6 @@
 body {
     color: var(--black);
     background-image: linear-gradient(var(--white), #E0FFFF);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .navigate {
@@ -30,11 +27,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    width: 93.6vw;
-    height: 5%;
+    width: 94.6vw;
     background: white;
     transition: all 0.3s;
-    z-index: 1000;
     box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -74,6 +69,7 @@ body {
 
 .backfeedback {
     margin-top: 50px;
+    min-height: 84vh;
 }
 
 .feedback {

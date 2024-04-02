@@ -42,6 +42,11 @@ document.getElementById("btninstagram").addEventListener("click", function () {
     window.open(urlInstagram, "_blank");
 });
 
+document.getElementById("btncontato").addEventListener("click", function () {
+    var urlInstagram = "https://www.instagram.com/rogerio_barbearia_itu?igsh=MXB4cWZ6MHhub2Fmeg=="
+    window.open(urlInstagram, "_blank");
+});
+
 document.getElementById("btnfacebook").addEventListener("click", function () {
     var urlFacebook = "https://www.facebook.com/share/B6AwnCXZE4U4b3ho/?mibextid=qi2Omg"
     window.open(urlFacebook, "_blank");
